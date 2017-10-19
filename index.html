@@ -31,45 +31,50 @@
       </div>
     </header>
     <section class="section-news background-light-blue">
-      <div class="container">
+      <div class="flex-container news-container">
         <div class="news-item news-item-1">
           <img src="./images/information-main.jpg" />
           <div class="news-content">
-            <h3>Orientation date</h3>
-            <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
-            <a href="#">Read more</a>
+            <h3>It doesn't hurt to keep practicing</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et tristique purus, quis convallis turpis. Praesent quis faucibus erat. Sed dictum, sapien sed feugiat dapibus, est erat dictum purus, id viverra arcu lacus nec dolor. Vivamus mi nibh, semper ac porttitor nec, lacinia nec nisl. In posuere laoreet odio at bibendum. </p>
+            <p class="writer">Emanuel, Sr Strategist at Hiring.com</p>
           </div>
         </div>
-        <div class="news-item news-item-2">
-          <img src="./images/information-orientation-mobile.jpg" />
-          <div class="news-content">
-            <h3>Our campus</h3>
-            <p>Find which campus is close by you</p>
-            <a href="#">Read more</a>
+        <div class="news-item-2">
+          <div class="news-item">
+            <img class="visible-xs" src="./images/information-orientation-mobile.jpg" />
+            <img class="visible-sm" src="./images/information-orientation.jpg" />
+            <div class="news-content">
+              <h3>Our campus</h3>
+              <p>Find which campus is close by you</p>
+              <a href="#">Read more</a>
+            </div>
           </div>
-        </div>
-        <div class="news-item news-item-3">
-          <img src="./images/information-campus-mobile.jpg" />
-          <div class="news-content">
-            <h3>Special guest lecture</h3>
-            <p>Join a keynote with Oliver Sack about music in medical treatment</p>
-            <a href="#">Read more</a>
+          <div class="news-item">
+            <img class="visible-xs" src="./images/information-campus-mobile.jpg" />
+            <img class="visible-sm" src="./images/information-campus.jpg" />
+            <div class="news-content">
+              <h3>Special guest lecture</h3>
+              <p>Join a keynote with Oliver Sack about music in medical treatment</p>
+              <a href="#">Read more</a>
+            </div>
           </div>
-        </div>
-        <div class="news-item news-item-4">
-          <img src="./images/information-guest-lecture-mobile.jpg" />
-          <div class="news-content">
-            <h3>Orientation date</h3>
-            <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
-            <a href="#">Read more</a>
+          <div class="news-item news-item-attention">
+            <img class="visible-xs" src="./images/information-guest-lecture-mobile.jpg" />
+            <img class="visible-sm" src="./images/information-guest-lecture.jpg" />
+            <div class="news-content">
+              <h3>Orientation date</h3>
+              <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
+              <a href="#">Read more</a>
+            </div>
           </div>
         </div>
       </div>
     </section>
     <section class="section-learning">
-      <div class="container">
-        <h2>Start learning</h2>
-        <ul class="flex-container flex-column">
+      <div class="container container-learning">
+        <h2 class="section-header">Start learning</h2>
+        <ul class="flex-container flex-column visible-xs">
           <li><a href="#">Software engineering</a></li>
           <li><a href="#">Computer art</a></li>
           <li><a href="#">Design</a></li>
@@ -77,20 +82,96 @@
           <li><a href="#">Business</a></li>
           <li><a href="#">Marketing</a></li>
         </ul>
+        <div class="visible-sm">
+          <div class="lesson">
+            <img src="./images/course-software.jpg" />
+            <div class="lesson-content">
+              <h3>Software engineering</h3>
+              <p class="courses">courses</p>
+              <p>Web Development, Mobile Development, iOT, APIs</p>
+            </div>
+          </div>
+          <div class="lesson">
+            <img src="./images/course-computer-art.jpg" />
+            <div class="lesson-content">
+              <h3>Computer art</h3>
+              <p class="courses">courses</p>
+              <p>Web Development, Mobile Development, iOT, APIs</p>
+            </div>
+          </div>
+          <div class="lesson">
+            <img src="./images/course-design.jpg" />
+            <div class="lesson-content">
+              <h3>Design</h3>
+              <p class="courses">courses</p>
+              <p>Web Development, Mobile Development, iOT, APIs</p>
+            </div>
+          </div>
+          <div class="lesson">
+            <img src="./images/course-data.jpg" />
+            <div class="lesson-content">
+              <h3>Data</h3>
+              <p class="courses">courses</p>
+              <p>Web Development, Mobile Development, iOT, APIs</p>
+            </div>
+          </div>
+          <div class="lesson">
+            <img src="./images/course-business.jpg" />
+            <div class="lesson-content">
+              <h3>Business</h3>
+              <p class="courses">courses</p>
+              <p>Web Development, Mobile Development, iOT, APIs</p>
+            </div>
+          </div>
+          <div class="lesson">
+            <img src="./images/course-marketing.jpg" />
+            <div class="lesson-content">
+              <h3>Marketing</h3>
+              <p class="courses">courses</p>
+              <p>Web Development, Mobile Development, iOT, APIs</p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <section class="section-exhibits background-light-blue">
       <div class="container">
-        <h2>Thesis exhibits</h2>
+        <h2 class="section-header">Thesis exhibits</h2>
       </div>
-        <video controls>
-          <source src="./videos/thesis.mp4" type="video/mp4">
-            Your browser does not support video.
-        </video>
+      <div class="flex-container exhibits-container">
+        <div class="container video-container">
+          <video controls>
+            <source src="./videos/thesis.mp4" type="video/mp4">
+              Your browser does not support video.
+          </video>
+          <h3>Reimagine urban</h3>
+          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec volutpat nibh a quam euismod facilisis. Integer dictum tortor ac diam consectetur molestie. Aliquam aliquam luctus lacinia. Ut non luctus tellus. Praesent ac tellus et ex facilisis consequat. Ut non accumsan odio. Praesent ac orci fermentum, blandit nulla at, luctus velit. Aenean eget fermentum turpis."</p>
+        </div>
+        <div class="visible-sm container exhibit-item-2">
+          <div class="exhibit-item exhibit-item-attention">
+            <img src="./images/thesis-fisma.jpg" />
+            <div class="exhibit-content">
+              <h3>Fisma: Design and Prototype</h3>
+              <p>Designer showcase of new prototype product</p>
+            </div>
+          </div>
+          <div class="exhibit-item">
+            <img src="./images/thesis-now-and-then.jpg" />
+            <div class="exhibit-content">
+              <h3>Now and then</h3>
+              <p>Research study about New York</p>
+            </div>
+          </div>
+      </div>
+    </div>
     </section>
     <footer class="background-light-blue">
       <div class="container">
-        &#9400; Colmar Academy. All rights reserved
+        <p>&#9400; Colmar Academy. All rights reserved</p>
+        <ul class="visible-sm">
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Privacy</a></li>
+        </ul>
       </div>
     </footer>
   </body>
