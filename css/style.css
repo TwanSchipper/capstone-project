@@ -15,10 +15,30 @@ h1 {
 
 h2 {
   font-weight: 400;
+  margin-bottom: 16px;
+  margin-top: 0;
+}
+
+a  {
+  color: #4480b9;
+  transition: .3s ease-in;
+}
+
+a:hover {
+  color: #376794;
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
 }
 /* end base */
 
 /* grid */
+.container {
+  padding: 16px;
+}
+
 .flex-container {
   display: -webkit-flex;
   display: flex;
@@ -26,6 +46,10 @@ h2 {
 
 .flex-row {
   flex-directon: row;
+}
+
+.flex-column {
+  flex-direction: column;
 }
 
 .flex-j-end {
@@ -61,6 +85,14 @@ nav ul li {
   background-color: #efefef;
 }
 
+.background-light-blue {
+  background-color: rgb(244, 250, 255);
+}
+
+.background-white {
+  background-color: #fff;
+}
+
 .welcome-text {
   padding: 32px 16px;
 }
@@ -82,4 +114,67 @@ nav ul li {
   padding: 8px;
   font-weight: bold;
 }
+
+.section-news {
+  padding: 16px;
+}
+
+.news-item {
+  padding-bottom: 64px;
+}
+
+.news-item:last-of-type {
+  padding-bottom: 32px;
+}
+
+.news-content {
+  padding: 16px 16px 0 16px;
+}
+
+.news-item-1 {
+  display: none;
+}
+
+.section-learning, .section-exhibits {
+  padding: 16px 0;
+}
+
+.section-learning ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.section-learning li {
+  margin-bottom: 8px;
+}
+
+.section-learning a {
+  padding: 16px;
+  background-color: #ccc;
+  display: block;
+  color: #333;
+  text-decoration: none;
+}
+
+.section-learning li a:last-of-type {
+  margin-bottom: 0;
+}
+
+.section-exhibits video {
+  width: 100%;
+  padding-bottom: 24px;
+}
+
+footer {
+  font-size: 12px;
+}
 /* layout */
+
+/* media queries */
+@media only screen and (min-width: 992px) {
+  .news-item-1 {
+    display: block;
+  }
+}
+/* end media queries */
