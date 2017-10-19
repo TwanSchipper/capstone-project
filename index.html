@@ -7,17 +7,23 @@
   </head>
   <body>
     <nav>
-      <ul class="flex-container flex-j-around flex-items-center">
-        <li><img src="./images/ic-logo.svg" alt="IC logo" /></li>
-        <li><img src="./images/ic-on-campus.svg" alt="IC campus logo" /></li>
-        <li><img src="./images/ic-online.svg" alt="IC online logo" /></li>
-        <li><img src="./images/ic-login.svg" alt="IC login logo" /></li>
+        <ul class="flex-container nav-logo">
+        <li class="logo flex-container"><img src="./images/ic-logo.svg" alt="IC logo" /><span class="visible-sm colmar">Colmar</span><span class="visible-sm academy">Academy</span></li>
+        <li class="visible-xs"><img src="./images/ic-on-campus.svg" alt="IC campus logo" /></li>
+        <li class="visible-xs"><img src="./images/ic-online.svg" alt="IC online logo" /></li>
+        <li class="visible-xs"><img src="./images/ic-login.svg" alt="IC login logo" /></li>
+      </ul>
+      <ul class="flex-container visible-sm nav-content">
+        <li class="visible-sm nav-item"><a href="#">On campus</a></li>
+        <li class="visible-sm nav-item"><a href="#">Online</a></li>
+        <li class="visible-sm nav-item"><a href="#">For companies</a></li>
+        <li class="visible-sm nav-item"><a href="#">Sign in</a></li>
       </ul>
     </nav>
     <header class="background-gray">
       <div class="jumbotron">
         <div class="hero-image"></div>
-        <div class="welcome-text flex">
+        <div class="welcome-text">
           <h1>Learn something new everyday</h1>
           <h2>Loren ipsum dolor sit amet, consectetur adipiscing elit.</h2>
           <a class="btn flex-container flex-j-center">Start here</a>

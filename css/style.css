@@ -70,15 +70,56 @@ img {
 /* end grid */
 
 /* layout */
-nav ul {
+nav .nav-logo {
   list-style-type: none;
   padding: 0;
   margin: 0;
   height: 64px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav .nav-content {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  height: 64px;
+  align-items: center;
 }
 
 nav ul li {
   display: inline-block;
+}
+
+nav .colmar, nav .academy {
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+nav .colmar {
+  color: #000;
+  font-weight: bold;
+}
+
+nav .academy {
+  color: #878787;
+}
+
+nav .nav-content {
+  padding-right: 24px;
+}
+
+.nav-content .nav-item {
+  padding-right: 16px;
+}
+
+.nav-content .nav-item:last-of-type {
+  padding: 0;
+}
+
+.nav-content .nav-item a {
+  color: #333;
+  text-decoration: none;
 }
 
 .background-gray {
@@ -109,7 +150,7 @@ nav ul li {
 }
 
 .btn {
-  background-color: #808080;
+  background-color: #333;
   color: #fff;
   padding: 8px;
   font-weight: bold;
@@ -172,9 +213,80 @@ footer {
 /* layout */
 
 /* media queries */
+
+/* media queries hidden */
+.visible-sm {
+  display: none;
+}
+/* end media queries hidden */
+
+
+/* media queries for desktop */
+@media only screen and (min-width: 1200px) {
+
+}
+/* end media queries for desktop */
+
+/* media queries for tablet landscape */
 @media only screen and (min-width: 992px) {
   .news-item-1 {
     display: block;
   }
+  .container {
+    padding: 24px;
+  }
+  nav ul {
+    padding: 0 24px;
+  }
+  .jumbotron {
+    padding: 32px 24px;
+    display: flex;
+    align-items: center;
+  }
+  .jumbotron h1 {
+    font-size: 38px;
+  }
+  .jumbotron .hero-image {
+    width: 60%;
+    height: 80vh;
+  }
+  .jumbotron .welcome-text {
+    width: 24%;
+    padding: 24px;
+  }
+  .jumbotron .btn {
+    margin: 24px 0;
+  }
+  .news-item-1 {
+    width: 60%;
+  }
 }
+/* end media queries for tablet landscape */
+
+/* media queries for tablet portrait */
+@media only screen and (min-width: 767px) {
+  .visible-sm {
+    display: block;
+  }
+  .visible-xs {
+    display: none;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  nav .logo {
+    height: 32px;
+    padding: 0 24px;
+    align-items: center;
+  }
+  nav .nav-content {
+    display: flex;
+  }
+  nav .nav-item {
+    display: flex;
+  }
+}
+/* end media queries for tablet portrait */
+
 /* end media queries */
