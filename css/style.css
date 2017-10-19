@@ -1,0 +1,85 @@
+/* base */
+html {
+  color: #333;
+  font-family: 'Helvetica', 'Helvetica Neue', serif;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+
+}
+
+h2 {
+  font-weight: 400;
+}
+/* end base */
+
+/* grid */
+.flex-container {
+  display: -webkit-flex;
+  display: flex;
+}
+
+.flex-row {
+  flex-directon: row;
+}
+
+.flex-j-end {
+  justify-content: flex-end;
+}
+
+.flex-j-center {
+  justify-content: center;
+}
+
+.flex-j-around {
+  justify-content: space-around;
+}
+
+.flex-items-center {
+  align-items: center;
+}
+/* end grid */
+
+/* layout */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  height: 64px;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+.background-gray {
+  background-color: #efefef;
+}
+
+.welcome-text {
+  padding: 32px 16px;
+}
+
+.jumbotron h1 {
+
+}
+
+.jumbotron .hero-image {
+  background-image: url('../images/banner.jpg');
+  background-position: 100%;
+  background-size: cover;
+  height: 300px;
+}
+
+.btn {
+  background-color: #808080;
+  color: #fff;
+  padding: 8px;
+  font-weight: bold;
+}
+/* layout */
