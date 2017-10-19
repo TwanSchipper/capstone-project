@@ -13,24 +13,25 @@ body {
 
 p {
   font-weight: 200;
+  margin: 8px 0;
 }
 
 h2 {
   font-size: 1.8em;
   font-weight: 400;
-  margin-bottom: 16px;
-  margin-top: 0;
+  margin: 0;
 }
 
 h3 {
   font-size: 1.3em;
-  margin-top: 0;
+  margin: 0;
   font-weight: 500;
 }
 
 a  {
   color: #4480b9;
   transition: .3s ease-in;
+  text-decoration: none;
 }
 
 a:hover {
@@ -159,6 +160,10 @@ nav .nav-content {
   height: 300px;
 }
 
+.jumbotron .btn {
+  margin: 24px 0;
+}
+
 .btn {
   background-color: #333;
   color: #fff;
@@ -178,6 +183,10 @@ nav .nav-content {
   padding: 16px 16px 0 16px;
 }
 
+.news-content h2 {
+  padding: 32px 0 24px 0;
+}
+
 .news-item-1 {
   display: none;
 }
@@ -185,6 +194,10 @@ nav .nav-content {
 .news-item-1 .writer {
   color: #000;
   font-size: 12px;
+}
+
+.section-header {
+  padding: 8px 0 16px 0;
 }
 
 .section-learning ul {
@@ -214,8 +227,19 @@ nav .nav-content {
   background-color: #fff;
 }
 
+.lesson {
+  width: 49%;
+  display: inline-block;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
 .courses {
   text-transform: uppercase;
+}
+
+.exhibits-container {
+  padding: 0;
 }
 
 .section-exhibits video {
@@ -240,19 +264,22 @@ footer {
 /* media queries for desktop */
 @media only screen and (min-width: 1200px) {
   .container-learning {
-    padding: 32px 56px!important;
+    padding: 8px;
   }
   .exhibits-container {
     padding: 0 24px;
   }
-  .news-container {
-    padding: 32px 24px;
+  .welcome-text h2 {
+    font-size: 24px;
   }
 }
 /* end media queries for desktop */
 
 /* media queries for tablet landscape */
 @media only screen and (min-width: 992px) {
+  .news-item {
+    padding-bottom: 0;
+  }
   .news-item-1 {
     display: block;
     width: 60%;
@@ -260,6 +287,9 @@ footer {
   .news-item-1 .writer {
     align-self: baseline;
     display: flex;
+  }
+  .news-item-1 .news-content {
+    padding: 0;
   }
   .news-item-2 {
     padding: 0 24px;
@@ -305,9 +335,6 @@ footer {
     width: 24%;
     padding: 24px;
   }
-  .jumbotron .btn {
-    margin: 24px 0;
-  }
   .section-learning {
     background-color: #efefef;
   }
@@ -318,12 +345,7 @@ footer {
     box-sizing: border-box;
   }
   .container-learning {
-    padding: 32px;
-  }
-  .section-exhibits .video-container {
-    width: 60%;
-    padding: 0;
-    display: block;
+    padding: 8px;
   }
   footer {
     border-top: 1px solid #ececec;
@@ -376,6 +398,11 @@ footer {
   }
   .section-header {
     text-align: center;
+  }
+  .section-exhibits .video-container {
+    width: 60%;
+    padding: 0 16px;
+    display: block;
   }
 }
 /* end media queries for tablet portrait */
