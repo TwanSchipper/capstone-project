@@ -1,9 +1,9 @@
 /* base */
 html {
   color: #333;
-  font-family: 'Helvetica', 'Helvetica Neue', serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
-  font-weight: normal;
+  font-weight: 300;
 }
 
 body {
@@ -12,13 +12,13 @@ body {
 }
 
 p {
-  font-weight: 200;
+  font-weight: 300;
   margin: 8px 0;
 }
 
 h2 {
   font-size: 1.8em;
-  font-weight: 400;
+  font-weight: 500;
   margin: 0;
 }
 
@@ -32,6 +32,7 @@ a  {
   color: #4480b9;
   transition: .3s ease-in;
   text-decoration: none;
+  font-weight: 400;
 }
 
 a:hover {
@@ -131,6 +132,11 @@ nav .nav-content {
 .nav-content .nav-item a {
   color: #333;
   text-decoration: none;
+  transition: all .2s ease-in;
+}
+
+.nav-content .nav-item a:hover {
+  color: #878787;
 }
 
 .background-gray {
@@ -198,6 +204,7 @@ nav .nav-content {
 
 .section-header {
   padding: 8px 0 16px 0;
+  text-align: center;
 }
 
 .section-learning ul {
@@ -222,16 +229,20 @@ nav .nav-content {
   margin-bottom: 0;
 }
 
-.lesson .lesson-content {
-  padding: 16px 16px 24px 16px;
-  background-color: #fff;
-}
-
 .lesson {
   width: 49%;
   display: inline-block;
   padding: 16px;
   box-sizing: border-box;
+}
+
+.lesson .lesson-content {
+  padding: 16px 16px 24px 16px;
+  background-color: #fff;
+}
+
+.lesson img {
+  width: 100%;
 }
 
 .courses {
@@ -264,7 +275,7 @@ footer {
 /* media queries for desktop */
 @media only screen and (min-width: 1200px) {
   .container-learning {
-    padding: 8px;
+    padding: 32px;
   }
   .exhibits-container {
     padding: 0 24px;
@@ -345,27 +356,7 @@ footer {
     box-sizing: border-box;
   }
   .container-learning {
-    padding: 8px;
-  }
-  footer {
-    border-top: 1px solid #ececec;
-  }
-  footer p {
-    display: inline-block;
-  }
-  footer ul {
-    display: inline-block;
-    list-style-type: none;
-    float: right;
-    padding: 0;
-  }
-  footer li {
-    display: inline-block;
-    padding: 0 5px;
-  }
-  footer li a {
-    color: #333;
-    text-decoration: none;
+    padding: 32px 16px;
   }
 }
 /* end media queries for tablet landscape */
@@ -396,13 +387,30 @@ footer {
   .news-item-2 .news-item:first-of-type, .exhibit-item-2 {
   padding-top: 0;
   }
-  .section-header {
-    text-align: center;
-  }
   .section-exhibits .video-container {
     width: 60%;
     padding: 0 16px;
     display: block;
+  }
+  footer {
+    border-top: 1px solid #ececec;
+  }
+  footer p {
+    display: inline-block;
+  }
+  footer ul {
+    display: inline-block;
+    list-style-type: none;
+    float: right;
+    padding: 0;
+  }
+  footer li {
+    display: inline-block;
+    padding: 0 5px;
+  }
+  footer li a {
+    color: #333;
+    text-decoration: none;
   }
 }
 /* end media queries for tablet portrait */
